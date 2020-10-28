@@ -1,33 +1,60 @@
 :host {
   display: block;
-  width: 395px;
-  height: 200px;
-  flex-direction: column;
-  align-items: flex-start;
-  background: #FFFFFF;
 
-  background: green;
+  .container {
+    width: 395px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    background: #FFFFFF;
 
-  border-radius: 10px;
+    background: green;
 
-  .pictures {
-    width: 136px;
-    height: 152px;
+    .edit-data {
+      position: absolute;
+      top: 11px;
+      right: 11px;
+      width: 18px;
+      height: 18px;
+    }
 
-    display: inline-block;
-    margin: 24px 0 0 24px;
+    .pictures {
+      width: 136px;
+      height: 152px;
 
-    background-color: yellow;
+      // display: inline-block;
+      float: left;
+
+      margin: 24px 0 0 24px;
+
+      background-color: yellow;
+    }
+
+    .data {
+      width: 201px;
+      height: 152px;
+
+      float: left;
+      margin: 24px 0 0 10px;
+
+      background-color: blue;
+
+      .name-container {
+
+        .name {
+          width: 143px;
+          height: 48px;
+          display: inline-block;
+
+          background-color: white;
+        }
+
+        .protected {
+          display: inline-block;
+
+          background-color: orange;
+        }
+      }
+    }
   }
-
-  .data {
-    width: 201px;
-    height: 152px;
-
-    display: inline-block;
-    margin-left: 10px;
-
-    background-color: blue;
-  }
-
 }
