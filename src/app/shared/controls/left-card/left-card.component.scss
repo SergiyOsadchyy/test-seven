@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  width: 395px;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+
+  background: green;
+
+  border-radius: 10px;
+
+  .pictures {
+    width: 136px;
+    height: 152px;
+
+    display: inline-block;
+    margin: 24px 0 0 24px;
+
+    background-color: yellow;
+  }
+
+  .data {
+    width: 201px;
+    height: 152px;
+
+    display: inline-block;
+    margin-left: 10px;
+
+    background-color: blue;
+  }
+
+}
