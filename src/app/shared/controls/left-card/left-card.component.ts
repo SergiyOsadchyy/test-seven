@@ -7,6 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class LeftCardComponent {
   @Input() public numberOfStars: number = 4;
+  @Input() public description: string = 'UI\\UX Designer, Web Designer,\n' +
+    'Mobile App Designer, UI\\UX Designer, Web Designer,Mobile App Designer';
+  @Input() public city: string = 'Lviv, Ukraine';
+
   public stars: Array<number>;
 
   constructor() {

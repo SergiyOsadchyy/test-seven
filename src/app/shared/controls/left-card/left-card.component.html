@@ -10,6 +10,7 @@
       </div>
       <span class="name">Cristofer Carder Junior</span>
     </div>
+
     <div class="statistic-container">
       <div class="stars-collection">
         <div class="star-full" *ngFor="let star of stars">
@@ -24,7 +25,14 @@
       </div>
     </div>
 
+    <div class="description-container">
+      <span class="description">{{description}}</span>
+    </div>
 
+    <div class="location-container">
+      <img src="assets/images/shared/controls/left-card/geo-location.svg" alt="geolocation">
+      <span>{{city}}</span>
+    </div>
   </div>
 
 
