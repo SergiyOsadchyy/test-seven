@@ -40,21 +40,75 @@
       background-color: blue;
 
       .name-container {
+        width: 167px;
+        height: 48px;
+        position: relative;
+        padding-right: 10px;
+
+        .name-img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 12px;
+          height: 14.67px;
+        }
 
         .name {
-          width: 143px;
-          height: 48px;
-          display: inline-block;
-
-          background-color: white;
-        }
-
-        .protected {
-          display: inline-block;
-
-          background-color: orange;
+          font-family: Barlow, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 24px;
         }
       }
+
+      .statistic-container {
+        margin: 8px 0;
+
+        .stars-collection {
+          float: left;
+          min-width: 100px;
+
+          background-color: pink;
+
+          .star-full {
+            margin-right: 4px;
+          }
+
+          .star-half {
+            margin-right: 16px;
+          }
+
+          .star-full, .star-half {
+            line-height: 16px;
+            float: left;
+
+            img {
+              width: 13.33px;
+              height: 12.67px;
+            }
+          }
+        }
+
+        .reviews {
+          float: left;
+          min-width: 49px;
+          display: table;
+
+          span {
+            display: table-cell;
+            vertical-align: middle;
+            font-family: Barlow, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            line-height: 16px;
+            text-decoration-line: underline;
+            color: #3C738D;
+          }
+        }
+      }
+
     }
   }
 }
