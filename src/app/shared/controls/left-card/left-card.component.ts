@@ -6,12 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./left-card.component.scss']
 })
 export class LeftCardComponent {
-  @Input() public numberOfStars: number = 4;
-  @Input() public description: string = 'UI\\UX Designer, Web Designer,\n' +
-    'Mobile App Designer, UI\\UX Designer, Web Designer,Mobile App Designer';
-  @Input() public city: string = 'Lviv, Ukraine';
-
-  @Input() public avatar: any = {src: 'assets/images/shared/controls/left-card/avatar.svg', alt: 'avatar'};
   @Input() public languages: Array<any> = [
     {src: 'assets/images/shared/controls/left-card/ukraine.svg', alt: 'ukrainian'},
     {src: 'assets/images/shared/controls/left-card/britain.svg', alt: 'english'},
@@ -24,10 +18,19 @@ export class LeftCardComponent {
     {src: 'assets/images/shared/controls/left-card/portugal.svg', alt: 'portuguese'}
   ];
 
+  @Input() public person: any = {
+    avatar: {src: 'assets/images/shared/controls/left-card/avatar.svg', alt: 'avatar'},
+    name: 'Cristofer Carder Junior',
+    description: 'UI\\UX Designer, Web Designer,\nMobile App Designer, UI\\UX Designer,\n Web Designer,Mobile App Designer',
+    city: 'Lviv, Ukraine',
+    numberOfFullStars: 4,
+    hasHalfStar: true,
+    numberOfReviews: 234
+  };
 
   public stars: Array<number>;
 
   constructor() {
-    this.stars = Array(this.numberOfStars).fill(0).map((x, i) => i);
+    this.stars = Array(this.person.numberOfFullStars).fill(0).map((x, i) => i);
   }
 }

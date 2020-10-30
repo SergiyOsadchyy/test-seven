@@ -4,7 +4,8 @@
   </a>
 
   <div class="pictures">
-    <img class="avatar" src="{{avatar.src}}" alt="{{avatar.alt}}">
+    <img class="avatar" src="{{person.avatar.src}}" alt="{{person.avatar.alt}}">
+
     <a href="#" class="edit-button">
       <img class="edit-ellipse" src="assets/images/shared/controls/left-card/ellipse.svg" alt="edit-ellipse">
       <img class="edit-pen" src="assets/images/shared/controls/left-card/pen-white.svg" alt="edit-pen">
@@ -22,7 +23,7 @@
       <div class="name-img">
         <img src="assets/images/shared/controls/left-card/protect.svg" alt="protect">
       </div>
-      <span class="name">Cristofer Carder Junior</span>
+      <span class="name">{{person.name}}</span>
     </div>
 
     <div class="statistic-container">
@@ -30,22 +31,22 @@
         <div class="star-full" *ngFor="let star of stars">
           <img src="assets/images/shared/controls/left-card/star-red.svg" alt="red star">
         </div>
-        <div class="star-half">
+        <div class="star-half" *ngIf="person.hasHalfStar">
           <img src="assets/images/shared/controls/left-card/star-red-white.svg" alt="red-white star">
         </div>
       </div>
       <div class="reviews">
-        <span>234 Reviews</span>
+        <span>{{person.numberOfReviews}} Reviews</span>
       </div>
     </div>
 
     <div class="description-container">
-      <span class="description">{{description}}</span>
+      <span class="description">{{person.description}}</span>
     </div>
 
     <div class="location-container">
       <img src="assets/images/shared/controls/left-card/geo-location.svg" alt="geolocation">
-      <span>{{city}}</span>
+      <span>{{person.city}}</span>
     </div>
   </div>
 </div>

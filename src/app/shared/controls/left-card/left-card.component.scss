@@ -141,17 +141,10 @@
         .stars-collection {
           min-width: 100px;
 
-          .star-full {
-            margin-right: 4px;
-          }
-
-          .star-half {
-            margin-right: 16px;
-          }
-
           .star-full, .star-half {
             line-height: 16px;
             float: left;
+            margin-right: 4px;
 
             img {
               width: 13.33px;
@@ -163,6 +156,7 @@
         .reviews {
           min-width: 49px;
           display: table;
+          padding-left: 12px;
 
           span {
             display: table-cell;
