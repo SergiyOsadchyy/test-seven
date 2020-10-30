@@ -11,33 +11,8 @@
     </a>
 
     <div class="languages-container">
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/ukraine.svg" alt="ukrainian">
-      </a>
-
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/britain.svg" alt="britain">
-      </a>
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/russia.svg" alt="russia">
-      </a>
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/france.svg" alt="france">
-      </a>
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/germany.svg" alt="germany">
-      </a>
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/turkey.svg" alt="turkey">
-      </a>
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/china.svg" alt="china">
-      </a>
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/spain.svg" alt="spain">
-      </a>
-      <a href="#" class="language">
-        <img src="assets/images/shared/controls/left-card/portugal.svg" alt="portugal">
+      <a href="#" class="language" *ngFor="let language of languages">
+        <img src="{{language.src}}" alt="{{language.alt}}">
       </a>
     </div>
   </div>
