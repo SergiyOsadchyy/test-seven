@@ -24,10 +24,38 @@
       height: 152px;
       float: left;
       margin: 24px 0 0 24px;
-
-
+      position: relative;
 
       background-color: yellow;
+
+      .avatar {
+        position: absolute;
+        top: 21px;
+        left: 26px;
+        width: 110px;
+        height: 110px;
+      }
+
+      .edit-button {
+        position: absolute;
+        top: 25px;
+        left: 98px;
+        width: 24px;
+        height: 24px;
+
+        .edit-ellipse {
+          width: 24px;
+          height: 24px;
+        }
+
+        .edit-pen {
+          position: absolute;
+          top: 25%;
+          left: 25%;
+          width: 12px;
+          height: 12px;
+        }
+      }
     }
 
     .data {
