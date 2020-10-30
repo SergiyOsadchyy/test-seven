@@ -8,9 +8,6 @@
     border-radius: 10px;
     background: #FFFFFF;
 
-    // temporary
-    border: 1px solid black;
-
     .edit-data {
       position: absolute;
       top: 11px;
@@ -25,8 +22,6 @@
       float: left;
       margin: 24px 0 0 24px;
       position: relative;
-
-      background-color: yellow;
 
       .avatar {
         position: absolute;
@@ -54,6 +49,59 @@
           left: 25%;
           width: 12px;
           height: 12px;
+        }
+      }
+
+      .languages-container {
+        width: 85px;
+        height: 152px;
+
+        .language {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 0;
+          top: 67px;
+        }
+
+        .language:nth-child(2) {
+          left: 5px;
+          top: 43px;
+        }
+
+        .language:nth-child(3) {
+          left: 5px;
+          top: 91px;
+        }
+
+        .language:nth-child(4) {
+          left: 20px;
+          top: 20px;
+        }
+
+        .language:nth-child(5) {
+          left: 20px;
+          top: 114px;
+        }
+
+        .language:nth-child(6) {
+          left: 43px;
+          top: 5px;
+        }
+
+        .language:nth-child(7) {
+          left: 43px;
+          top: 129px;
+        }
+
+        .language:nth-child(8) {
+          left: 67px;
+          top: 0;
+        }
+
+        .language:nth-child(9) {
+          left: 67px;
+          top: 134px;
         }
       }
     }
