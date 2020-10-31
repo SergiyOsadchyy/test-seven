@@ -16,7 +16,7 @@ export class DemoComponent implements OnInit {
       numberOfReviews: number
     };
 
-  public demoLanguages: Array<any>;
+  public demoLanguages: Array<{src: string, name: string}>;
 
   constructor() { }
 
@@ -32,15 +32,27 @@ export class DemoComponent implements OnInit {
     };
 
   this.demoLanguages = [
-      {src: 'assets/images/shared/controls/left-card/ukraine.svg', alt: 'ukrainian'},
-      {src: 'assets/images/shared/controls/left-card/britain.svg', alt: 'english'},
-      {src: 'assets/images/shared/controls/left-card/russia.svg', alt: 'russian'},
-      {src: 'assets/images/shared/controls/left-card/france.svg', alt: 'french'},
-      {src: 'assets/images/shared/controls/left-card/germany.svg', alt: 'german'},
-      {src: 'assets/images/shared/controls/left-card/turkey.svg', alt: 'turkish'},
-      {src: 'assets/images/shared/controls/left-card/china.svg', alt: 'chinese'},
-      {src: 'assets/images/shared/controls/left-card/spain.svg', alt: 'spanish'},
-      {src: 'assets/images/shared/controls/left-card/portugal.svg', alt: 'portuguese'}
+      {src: 'assets/images/shared/controls/left-card/ukraine.svg', name: 'ukrainian'},
+      {src: 'assets/images/shared/controls/left-card/britain.svg', name: 'english'},
+      {src: 'assets/images/shared/controls/left-card/russia.svg', name: 'russian'},
+      {src: 'assets/images/shared/controls/left-card/france.svg', name: 'french'},
+      {src: 'assets/images/shared/controls/left-card/germany.svg', name: 'german'},
+      {src: 'assets/images/shared/controls/left-card/turkey.svg', name: 'turkish'},
+      {src: 'assets/images/shared/controls/left-card/china.svg', name: 'chinese'},
+      {src: 'assets/images/shared/controls/left-card/spain.svg', name: 'spanish'},
+      {src: 'assets/images/shared/controls/left-card/portugal.svg', name: 'portuguese'}
     ];
+  }
+
+  onAvatarEdit(): void {
+    // TODO: develop AvatarEdit feature
+  }
+
+  onDataEdit(): void {
+    // TODO: develop DataEdit feature
+  }
+
+  onLanguageSelect(name: string): void {
+    // TODO: develop LanguageSelect feature
   }
 }

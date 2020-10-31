@@ -1,19 +1,19 @@
 <div class="container">
-  <a href="#" class="edit-data">
+  <a href="#" class="edit-data" (click)="onDataEdit()">
     <img src="assets/images/shared/controls/left-card/pen-gray.svg" alt="edit data">
   </a>
 
   <div class="pictures">
     <img class="avatar" src="{{person.avatar.src}}" alt="{{person.avatar.alt}}">
 
-    <a href="#" class="edit-button">
+    <a href="#" class="edit-button" (click)="onAvatarEdit()">
       <img class="edit-ellipse" src="assets/images/shared/controls/left-card/ellipse.svg" alt="edit-ellipse">
       <img class="edit-pen" src="assets/images/shared/controls/left-card/pen-white.svg" alt="edit-pen">
     </a>
 
     <div class="languages-container">
-      <a href="#" class="language" *ngFor="let language of languages">
-        <img src="{{language.src}}" alt="{{language.alt}}">
+      <a href="#" class="language" *ngFor="let language of languages" (click)="onLanguageSelect(language.name)">
+        <img src="{{language.src}}" alt="{{language.name}}">
       </a>
     </div>
   </div>

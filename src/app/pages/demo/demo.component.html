@@ -1,1 +1,7 @@
-<app-left-card [languages]="demoLanguages" [person]="demoPerson"></app-left-card>
+<app-left-card
+  [languages]="demoLanguages"
+  [person]="demoPerson"
+  (avatarEdit)="onAvatarEdit()"
+  (dataEdit)="onDataEdit()"
+  (languageSelect)="onLanguageSelect($event)"
+></app-left-card>
