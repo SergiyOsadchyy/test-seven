@@ -12,7 +12,7 @@
     </a>
 
     <div class="languages-container">
-      <a href="#" class="language" *ngFor="let language of languages" (click)="onLanguageSelect(language.name)">
+      <a href="#" class="language" *ngFor="let language of languages$ | async" (click)="onLanguageSelect(language.name)">
         <img src="{{language.src}}" alt="{{language.name}}">
       </a>
     </div>
