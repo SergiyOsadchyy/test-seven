@@ -1,0 +1,52 @@
+<div class="container">
+  <a href="#" class="edit-data" (click)="onDataEdit()">
+    <img src="assets/images/shared/controls/left-card/pen-gray.svg" alt="edit data">
+  </a>
+
+  <div class="pictures">
+    <img class="avatar" src="{{person.avatar.src}}" alt="{{person.avatar.alt}}">
+
+    <a href="#" class="edit-button" (click)="onAvatarEdit()">
+      <img class="edit-ellipse" src="assets/images/shared/controls/left-card/ellipse.svg" alt="edit-ellipse">
+      <img class="edit-pen" src="assets/images/shared/controls/left-card/pen-white.svg" alt="edit-pen">
+    </a>
+
+    <div class="languages-container">
+      <a href="#" class="language" *ngFor="let language of languages$ | async" (click)="onLanguageSelect(language.name)">
+        <img src="{{language.src}}" alt="{{language.name}}">
+      </a>
+    </div>
+  </div>
+
+  <div class="data">
+    <div class="name-container">
+      <div class="name-img">
+        <img src="assets/images/shared/controls/left-card/protect.svg" alt="protect">
+      </div>
+      <span class="name">{{person.name}}</span>
+    </div>
+
+    <div class="statistic-container">
+      <div class="stars-collection">
+        <div class="star-full" *ngFor="let star of stars">
+          <img src="assets/images/shared/controls/left-card/star-red.svg" alt="red star">
+        </div>
+        <div class="star-half" *ngIf="person.hasHalfStar">
+          <img src="assets/images/shared/controls/left-card/star-red-white.svg" alt="red-white star">
+        </div>
+      </div>
+      <div class="reviews">
+        <span>{{person.numberOfReviews}} Reviews</span>
+      </div>
+    </div>
+
+    <div class="description-container">
+      <span class="description">{{person.description}}</span>
+    </div>
+
+    <div class="location-container">
+      <img src="assets/images/shared/controls/left-card/geo-location.svg" alt="geolocation">
+      <span>{{person.city}}</span>
+    </div>
+  </div>
+</div>
