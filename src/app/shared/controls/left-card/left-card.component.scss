@@ -1,0 +1,213 @@
+:host {
+  display: block;
+
+  .container {
+    width: 395px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    background: #FFFFFF;
+
+    .edit-data {
+      position: absolute;
+      top: 11px;
+      right: 11px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .pictures {
+      width: 136px;
+      height: 152px;
+      float: left;
+      margin: 24px 0 0 24px;
+      position: relative;
+
+      .avatar {
+        position: absolute;
+        top: 21px;
+        left: 26px;
+        width: 110px;
+        height: 110px;
+      }
+
+      .edit-button {
+        position: absolute;
+        top: 25px;
+        left: 98px;
+        width: 24px;
+        height: 24px;
+
+        .edit-ellipse {
+          width: 24px;
+          height: 24px;
+        }
+
+        .edit-pen {
+          position: absolute;
+          top: 25%;
+          left: 25%;
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      .languages-container {
+        width: 85px;
+        height: 152px;
+
+        .language {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 0;
+          top: 67px;
+        }
+
+        .language:nth-child(2) {
+          left: 5px;
+          top: 43px;
+        }
+
+        .language:nth-child(3) {
+          left: 5px;
+          top: 91px;
+        }
+
+        .language:nth-child(4) {
+          left: 20px;
+          top: 20px;
+        }
+
+        .language:nth-child(5) {
+          left: 20px;
+          top: 114px;
+        }
+
+        .language:nth-child(6) {
+          left: 43px;
+          top: 5px;
+        }
+
+        .language:nth-child(7) {
+          left: 43px;
+          top: 129px;
+        }
+
+        .language:nth-child(8) {
+          left: 67px;
+          top: 0;
+        }
+
+        .language:nth-child(9) {
+          left: 67px;
+          top: 134px;
+        }
+      }
+    }
+
+    .data {
+      width: 201px;
+      height: 152px;
+      float: left;
+      margin: 24px 0 0 10px;
+
+      .name-container {
+        width: 167px;
+        height: 48px;
+        position: relative;
+        padding-right: 10px;
+
+        .name-img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 12px;
+          height: 14.67px;
+        }
+
+        .name {
+          font-family: Barlow, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      .statistic-container {
+        margin: 8px 0;
+
+        .stars-collection {
+          min-width: 100px;
+
+          .star-full, .star-half {
+            line-height: 16px;
+            float: left;
+            margin-right: 4px;
+
+            img {
+              width: 13.33px;
+              height: 12.67px;
+            }
+          }
+        }
+
+        .reviews {
+          min-width: 49px;
+          display: table;
+          padding-left: 12px;
+
+          span {
+            display: table-cell;
+            vertical-align: middle;
+            font-family: Barlow, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9px;
+            line-height: 16px;
+            text-decoration-line: underline;
+            color: #3C738D;
+          }
+        }
+      }
+
+      .description-container {
+        height: 48px;
+
+        .description {
+          display: block;
+          font-family: Barlow, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          // font-size: 12px;
+          font-size: 11.7px;
+          line-height: 16px;
+          color: rgba(0, 31, 61, 0.8);
+        }
+      }
+
+      .location-container {
+        position: relative;
+
+        img {
+          width: 5.82px;
+          height: 9.17px;
+          position: absolute;
+          top: 7px;
+          left: 0;
+        }
+
+        span {
+          margin-left: 12px;
+          font-family: Barlow, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 9px;
+          line-height: 14px;
+          color: rgba(0, 31, 61, 0.6);
+        }
+      }
+    }
+  }
+}
