@@ -1,3 +1,9 @@
+Tasks should be completed on Angular 7+
+1. Setup custom theme for Angular Material (colors; fonts), use this theme for all Material components
+2. Create component with UI code for the following element http://i.prntscr.com/SOcPkj73SqOsotgiV7bRFA.png
+3. Flags should be used from your own array. After delete some flags from array, others should be centered automatically (http://i.prntscr.com/piy6HCbKRFG1wFN4hl8HDQ.png)
+https://www.figma.com/file/3ZDoyp5ANx2iBPta0d7CHC/Test?node-id=0%3A1
+
 # TestSeven
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
